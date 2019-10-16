@@ -290,7 +290,7 @@
   service:
     name: >-
       {% if ansible_os_family == "RedHat" -%}
-      network
+      NetworkManager
       {%- elif ansible_distribution == "Ubuntu" and ansible_distribution_release == "bionic" -%}
       systemd-networkd
       {%- elif ansible_os_family == "Debian" -%}
